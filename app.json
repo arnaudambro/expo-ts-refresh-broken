@@ -1,5 +1,16 @@
 {
   "expo": {
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera to scan QRCodes."
+        }
+      ]
+    ],
     "name": "my-app",
     "slug": "my-app",
     "version": "1.0.0",
@@ -11,9 +22,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
